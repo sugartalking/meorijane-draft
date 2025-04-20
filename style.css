@@ -402,8 +402,7 @@ table.abt td {
 	max-width: 100%;
 	box-sizing: border-box;
 	padding: 1px;
-	margin: 0;
-	margin-right: 5px;
+	margin: 3px;
 	text-align: left;
 }
 
@@ -412,13 +411,13 @@ table.abt td.two {
 	border-width: 1px;
 	font-size: 13px;
 	line-height: 1.4;
-	padding:0px;
+	padding: 2px;
 }
 
 table.abt td.tri {
 	text-align: center;
 	line-height: 1.2;
-	padding:0px;
+	padding: 2px;
 }
 
 	table.abt img {

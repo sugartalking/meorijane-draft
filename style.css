@@ -18,13 +18,17 @@ html, body {
       }
 
 .section {
-  		height: 100vh;
-  		width: 100vw;
-  		display: flex;
-  		justify-content: center;
-  		align-items: center;
-  		position: relative;
-		}
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column; /* important for mobile stacking */
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
 
 #sections-wrapper {
   		height: 100vh;
@@ -310,27 +314,31 @@ table.abt img:hover {
 	html, body {
 		font-size: 14px;
 		overflow-x: hidden;
-		overflow-y: auto;
+		overflow-y: auto !important;
+		height: auto;
 		padding: 0;
 		margin: 0;
 		touch-action: auto;
 		scroll-behavior: smooth;
 	}
-
+	
 	.section {
+		height:auto;
 		min-height: 100vh;
 		width: 100%;
 		padding: 20px 10px;
+		padding-bottom:40px;
 		flex-direction: column;
 		overflow: visible;
 		box-sizing: border-box;
 	}
 
 	#sections-wrapper {
-		height: auto;
+		height: auto !important;
 		width: 100%;
 	}
 
+	
 .container {
     width: 100%;
     max-width: 95%; /* this is okay! */

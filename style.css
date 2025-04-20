@@ -412,11 +412,13 @@ table.abt td.two {
 	border-width: 1px;
 	font-size: 13px;
 	line-height: 1.4;
+	padding:0px;
 }
 
 table.abt td.tri {
 	text-align: center;
 	line-height: 1.2;
+	padding:0px;
 }
 
 	table.abt img {

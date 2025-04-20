@@ -1,8 +1,3 @@
-/* COLOR CODE BANK */
-/* HOT PINK #ff4492 */
-/* CALM GREEN #7bf27b */
-/* VIOLET #e975ff */
-
 html, body {
 		font-family: Arial, sans-serif;
 		margin: 0;
@@ -281,53 +276,122 @@ table.abt img:hover {
 
 
 
-@media(max-width: 768px) {
-  		img.header {
-    	width: 60%; 
-  		}
-		}    
+@media (max-width: 768px) {
+	img.header {
+		width: 65%;
+	}
+
+	.page-desc {
+		width: 85%;
+		font-size: 12px;
+	}
+
+	.qna {
+		width: 90%;
+		font-size: 14px;
+	}
+}
+  
 
 @media screen and (max-width: 600px) {
-		.page-desc {
-		width: 570px;
-		}
-		
-		.qna {
-		width: 550px;
-		}
-		
-		img.header {
-		width: 70%;
-		pointer-events: none;
-		}
-		
-		img.page-title {
+	/* General font and spacing adjustments */
+	html, body {
+		font-size: 14px;
+		padding: 10px;
+		overflow: auto;
+		touch-action: auto;
+	}
+
+	.page-desc {
+		width: 90%;
+		font-size: 11px;
+		padding-top: 15px;
+		margin-bottom: 20px;
+	}
+
+	.qna {
+		width: 90%;
+		padding: 8px;
+		font-size: 13px;
+	}
+
+	.container {
+		padding: 10px;
+	}
+
+	/* Adjust navigation font sizes */
+	a.navi, a.back {
+		font-size: 14px;
+		letter-spacing: -1px;
+	}
+
+	/* Images */
+	img.header {
 		width: 80%;
-		}
-		
-		
-  		table.abt, 
-  		table.abt tr, 
-  		table.abt td {
-    	display: block;
-    	width: 100%;
-  		}
+		pointer-events: none;
+	}
 
-  		table.abt tr {
-    	margin-bottom: 1rem;
-    	padding: 0.5rem;
-  		}
+	img.page-title {
+		width: 100%;
+		height: auto;
+		margin-bottom: -10px;
+	}
 
-  		table.abt td {
-    	border: none;
-    	padding: 0.5rem;
-  		}
-  		
-  		header {
-  		margin-top: 20px;
-  		}
-  		
-  		footer {
-  		margin-bottom: 20px;
-  		}
-		}
+	img.navi {
+		width: 90px;
+	}
+
+	/* About table becomes stacked on mobile */
+	table.abt,
+	table.abt tr,
+	table.abt td {
+		display: block;
+		width: 100%;
+		padding: 0.5rem;
+	}
+
+	table.abt tr {
+		margin-bottom: 1rem;
+	}
+
+	table.abt td {
+		padding: 12px;
+		margin: 6px 0;
+	}
+
+	table.abt td.one,
+	table.abt td.two {
+		border-width: 1px;
+		padding: 16px;
+	}
+
+	table.abt td.tri {
+		width: 100%;
+		text-align: center;
+	}
+
+	table.abt img {
+		width: 60px;
+		height: 60px;
+	}
+
+	/* Comment box smaller */
+	#commentBox {
+		font-size: 14px;
+		padding: 4px;
+		width: 95%;
+	}
+
+	/* Optional: Fix section height for scrolling */
+	.section {
+		height: auto;
+		min-height: 100vh;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	#sections-wrapper {
+		height: auto;
+	}
+}
+

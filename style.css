@@ -389,12 +389,13 @@ table.abt img:hover {
 	}
 
 	table.abt td {
-		padding: 10px;
-		margin: 0 auto 10px;
+		padding: 5px;
+		margin: 0 auto 5px;
 		text-align: left;
-		width: 500px;
+		width: 100%;
+		max-width: 90vw;
 	}
-
+	
 	table.abt td.one,
 	table.abt td.two {
 		border-width: 1px;

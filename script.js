@@ -1,31 +1,8 @@
-// SECTION SCROLL BEHAVIOR
 const sections = document.querySelectorAll('.section');
-const wrapper = document.getElementById('sections-wrapper');
 let currentSection = 0;
 const totalSections = sections.length;
 let isScrolling = false;
 
-function scrollToSection(index) {
-  if (index >= 0 && index < totalSections && !isScrolling) {
-    isScrolling = true;
-    wrapper.style.transform = `translateY(-${index * 100}vh)`;
-    currentSection = index;
-    setTimeout(() => {
-      isScrolling = false;
-    }, 1000);
-  }
-}
-
-window.addEventListener('wheel', (e) => {
-  if (e.deltaY > 0) {
-    scrollToSection(currentSection + 1);
-  } else {
-    scrollToSection(currentSection - 1);
-  }
-});
-
-
-//DELAYED VISIBILITY TRIGGERED EACH SECTION
 function scrollToSection(index) {
   if (index >= 0 && index < totalSections && !isScrolling) {
     isScrolling = true;
@@ -36,7 +13,9 @@ function scrollToSection(index) {
     // Add .active to the current section
     sections[index].classList.add('active');
 
-    wrapper.style.transform = `translateY(-${index * 100}vh)`;
+    // Scroll to the section smoothly
+    sections[index].scrollIntoView({ behavior: 'smooth' });
+
     currentSection = index;
 
     setTimeout(() => {
@@ -48,7 +27,16 @@ function scrollToSection(index) {
 // Initialize first section as active
 sections[0].classList.add('active');
 
-//MOBILE TOUCH EVENTS
+// Mouse wheel scroll
+window.addEventListener('wheel', (e) => {
+  if (e.deltaY > 0) {
+    scrollToSection(currentSection + 1);
+  } else {
+    scrollToSection(currentSection - 1);
+  }
+});
+
+// Touch scroll for mobile
 let touchStartY = 0;
 
 window.addEventListener('touchstart', (e) => {
@@ -68,21 +56,12 @@ window.addEventListener('touchend', (e) => {
   }
 });
 
-//NO SAVE IMG
-  document.addEventListener('contextmenu', function (e) {
-    if (e.target.tagName === 'IMG' && e.target.classList.contains('page-title')) {
-      e.preventDefault();
-    }
-  });
-  
-    document.addEventListener('contextmenu', function (e) {
-    if (e.target.tagName === 'IMG' && e.target.classList.contains('header')) {
-      e.preventDefault();
-    }
-  });
-
-//CHANGE 100VH BEHAVIOR
-// Optional: Adjust scroll snap manually on mobile if needed
-if (window.innerWidth <= 600) {
-  document.querySelector('#sections-wrapper').style.scrollSnapType = "none";
-}
+// Disable context menu on header and title images
+document.addEventListener('contextmenu', function (e) {
+  if (
+    e.target.tagName === 'IMG' &&
+    (e.target.classList.contains('page-title') || e.target.classList.contains('header'))
+  ) {
+    e.preventDefault();
+  }
+});

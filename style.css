@@ -150,6 +150,11 @@ img.page-title {
 		pointer-events: none;
 		}
 
+.abt-wrapper {
+		width: 75%;
+		margin: 0 auto;
+		}
+
 table.abt {
 		width: 100%;
 		table-layout: fixed;
@@ -442,11 +447,13 @@ table.abt td.tri {
 }
 
 @media screen and (max-width: 600px) {
-	.container > div[style*="width: 75%"] {
+	.abt-wrapper {
 		width: 100% !important;
 		max-width: 100% !important;
-		margin: 0 auto !important;
-		box-sizing: border-box;
 		padding: 0 10px;
+		box-sizing: border-box;
+	}
+		table.abt {
+		border-spacing: 0 !important;
 	}
 }

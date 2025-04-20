@@ -387,7 +387,7 @@ table.abt {
 table.abt tr {
 	display: block;
 	width: 100%;
-	margin-bottom: 12px;
+	margin-bottom: 5px;
 	box-sizing: border-box;
 }
 
@@ -396,8 +396,8 @@ table.abt td {
 	width: 100% !important;
 	max-width: 100%;
 	box-sizing: border-box;
-	padding: 12px 10px;
-	margin: 0 0 10px 0;
+	padding: 5px;
+	margin: 0 0 5px 0;
 	text-align: left;
 }
 

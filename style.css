@@ -288,10 +288,6 @@ table.abt img:hover {
 		}    
 
 @media screen and (max-width: 600px) {
-		footer {
-		bottom:40px;	
-		}
-	
 		.page-desc {
 		width: 570px;
 		}
@@ -308,29 +304,30 @@ table.abt img:hover {
 		img.page-title {
 		width: 80%;
 		}
-
-		table.abt img {
-		width:35px;
-		height: 35px;
-		}
+		
 		
   		table.abt, 
   		table.abt tr, 
   		table.abt td {
-    		display: block;
-		font-size: 10px;
+    	display: block;
+    	width: 100%;
   		}
 
   		table.abt tr {
-    		margin-bottom: 1rem;
-    		padding: 4px;
-		width:300px;
+    	margin-bottom: 1rem;
+    	padding: 0.5rem;
   		}
 
   		table.abt td {
-    		border: none;
-    		padding: 4px;
-    		width: 300px;
-		max-height: 150px;
+    	border: none;
+    	padding: 0.5rem;
+  		}
+  		
+  		header {
+  		margin-top: 20px;
+  		}
+  		
+  		footer {
+  		margin-bottom: 20px;
   		}
 		}

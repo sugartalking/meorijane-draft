@@ -288,6 +288,10 @@ table.abt img:hover {
 		}    
 
 @media screen and (max-width: 600px) {
+		footer {
+		bottom:40px;	
+		}
+	
 		.page-desc {
 		width: 570px;
 		}
@@ -309,18 +313,20 @@ table.abt img:hover {
   		table.abt, 
   		table.abt tr, 
   		table.abt td {
-    	display: block;
-    	width: 100%;
+    		display: block;
+		font-size: 1em;
   		}
 
   		table.abt tr {
-    	margin-bottom: 1rem;
-    	padding: 0.5rem;
+    		margin-bottom: 1rem;
+    		padding: 0.5rem;
   		}
 
   		table.abt td {
-    	border: none;
-    	padding: 0.5rem;
+    		border: none;
+    		padding: 0.5rem;
+    		width: 400px;
+		max-height: 200px;
   		}
   		
   		header {

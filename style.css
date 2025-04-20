@@ -334,6 +334,11 @@ table.abt img:hover {
 		box-sizing: border-box;
 	}
 
+	.container > div[style*="width: 75%"] {
+		width: 100% !important;
+		max-width: 95vw;
+	}
+
 	.page-desc {
 		width: 100%;
 		font-size: 11px;

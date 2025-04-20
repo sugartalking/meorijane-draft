@@ -331,13 +331,12 @@ table.abt img:hover {
 		width: 100%;
 	}
 
-	.container {
-		width: 100%;
-		max-width: 95%;
-		padding: 0;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+.container {
+    width: 100%;
+    max-width: 95%; /* this is okay! */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 
 	.page-desc {
 		width: 100%;
@@ -441,12 +440,13 @@ table.abt td.tri {
 }
 
 @media screen and (max-width: 600px) {
-	.abt-wrapper {
-		width: 100% !important;
-		max-width: 100% !important;
-		padding: 0 10px;
-		box-sizing: border-box;
-	}
+.abt-wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
 		table.abt {
 		border-spacing: 0 !important;
 	}

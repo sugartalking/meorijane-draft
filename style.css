@@ -30,13 +30,6 @@ html, body {
     padding: 20px 10px;
 }
 
-#sections-wrapper {
-  		height: 100vh;
-  		width: 100vw;
-  		transition: transform 0.8s ease-in-out;
-}
-
-
 .container {
 		display: grid;
 		place-items: center;

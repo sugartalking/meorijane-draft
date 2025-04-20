@@ -80,3 +80,9 @@ window.addEventListener('touchend', (e) => {
       e.preventDefault();
     }
   });
+
+//CHANGE 100VH BEHAVIOR
+// Optional: Adjust scroll snap manually on mobile if needed
+if (window.innerWidth <= 600) {
+  document.querySelector('#sections-wrapper').style.scrollSnapType = "none";
+}

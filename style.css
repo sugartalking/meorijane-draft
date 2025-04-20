@@ -274,124 +274,146 @@ table.abt img:hover {
   		transition-delay: 0s;
 		}
 
-
-
 @media (max-width: 768px) {
 	img.header {
-		width: 65%;
-	}
-
-	.page-desc {
-		width: 85%;
-		font-size: 12px;
-	}
-
-	.qna {
-		width: 90%;
-		font-size: 14px;
-	}
-}
-  
-
-@media screen and (max-width: 600px) {
-	/* General font and spacing adjustments */
-	html, body {
-		font-size: 14px;
-		padding: 10px;
-		overflow: auto;
-		touch-action: auto;
+		width: 60%;
 	}
 
 	.page-desc {
 		width: 90%;
 		font-size: 11px;
-		padding-top: 15px;
-		margin-bottom: 20px;
+		margin-bottom: 25px;
+		padding-top: 20px;
 	}
 
 	.qna {
-		width: 90%;
-		padding: 8px;
+		width: 92%;
 		font-size: 13px;
+		padding: 12px;
+	}
+
+	a.navi, a.back {
+		font-size: 16px;
+		letter-spacing: -1.2px;
+	}
+
+	img.navi {
+		width: 100px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	html, body {
+		font-size: 15px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		padding: 8px;
+		touch-action: auto;
+		scroll-behavior: smooth;
+	}
+
+	.section {
+		height: auto;
+		min-height: 100vh;
+		width: 100%;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		overflow-y: auto;
+		flex-direction: column;
+	}
+
+	#sections-wrapper {
+		height: auto;
 	}
 
 	.container {
 		padding: 10px;
+		width: 100%;
 	}
 
-	/* Adjust navigation font sizes */
+	.page-desc {
+		width: 95%;
+		font-size: 12px;
+		text-align: center;
+		padding-top: 20px;
+		margin-bottom: 25px;
+	}
+
+	.qna {
+		width: 95%;
+		font-size: 14px;
+		padding: 10px;
+		text-align: left;
+	}
+
 	a.navi, a.back {
 		font-size: 14px;
 		letter-spacing: -1px;
+		display: inline-block;
+		margin-top: 6px;
 	}
 
-	/* Images */
 	img.header {
-		width: 80%;
+		width: 85%;
+		margin-bottom: 20px;
 		pointer-events: none;
 	}
 
 	img.page-title {
 		width: 100%;
 		height: auto;
-		margin-bottom: -10px;
+		margin-bottom: -15px;
 	}
 
 	img.navi {
-		width: 90px;
+		width: 85px;
 	}
 
-	/* About table becomes stacked on mobile */
+	/* Table becomes stacked */
 	table.abt,
 	table.abt tr,
 	table.abt td {
 		display: block;
 		width: 100%;
-		padding: 0.5rem;
+		box-sizing: border-box;
 	}
 
 	table.abt tr {
-		margin-bottom: 1rem;
+		margin-bottom: 20px;
 	}
 
 	table.abt td {
-		padding: 12px;
-		margin: 6px 0;
+		padding: 12px 8px;
+		margin: 0 auto 12px;
+		text-align: left;
 	}
 
 	table.abt td.one,
 	table.abt td.two {
-		border-width: 1px;
+		border-width: 1.5px;
 		padding: 16px;
 	}
 
 	table.abt td.tri {
-		width: 100%;
 		text-align: center;
 	}
 
 	table.abt img {
-		width: 60px;
-		height: 60px;
+		width: 55px;
+		height: 55px;
+		margin: 2px;
 	}
 
-	/* Comment box smaller */
 	#commentBox {
-		font-size: 14px;
-		padding: 4px;
 		width: 95%;
+		font-size: 14px;
+		padding: 6px;
 	}
 
-	/* Optional: Fix section height for scrolling */
-	.section {
-		height: auto;
-		min-height: 100vh;
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-
-	#sections-wrapper {
-		height: auto;
+	footer {
+		font-size: 10px !important;
+		line-height: 14px;
+		padding-bottom: 12px;
+		text-align: center;
 	}
 }
-

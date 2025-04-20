@@ -310,34 +310,39 @@ table.abt img:hover {
 		}
 
 		table.abt img {
-		width:40px;
-		height: 40px;
+		width:35px;
+		height: 35px;
 		}
 		
   		table.abt, 
   		table.abt tr, 
   		table.abt td {
     		display: block;
-		font-size: 0.5em;
+		font-size: 8px;
   		}
 
   		table.abt tr {
     		margin-bottom: 1rem;
-    		padding: 0.2rem;
+    		padding: 0.1rem;
+		width:300px;
   		}
 
   		table.abt td {
     		border: none;
-    		padding: 0.5rem;
-    		width: 350px;
+    		padding: 0.1rem;
+    		width: 300px;
 		max-height: 150px;
   		}
   		
   		header {
+		position:absolute;
+		top: 20px;
   		margin-top: 20px;
   		}
   		
   		footer {
+		position:absolute;
+		bottom:40px;
   		margin-bottom: 20px;
   		}
 		}

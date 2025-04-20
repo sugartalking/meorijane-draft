@@ -318,31 +318,19 @@ table.abt img:hover {
   		table.abt tr, 
   		table.abt td {
     		display: block;
-		font-size: 8px;
+		font-size: 10px;
   		}
 
   		table.abt tr {
     		margin-bottom: 1rem;
-    		padding: 0.1rem;
+    		padding: 4px;
 		width:300px;
   		}
 
   		table.abt td {
     		border: none;
-    		padding: 0.1rem;
+    		padding: 4px;
     		width: 300px;
 		max-height: 150px;
-  		}
-  		
-  		header {
-		position:absolute;
-		top: 20px;
-  		margin-top: 20px;
-  		}
-  		
-  		footer {
-		position:absolute;
-		bottom:40px;
-  		margin-bottom: 20px;
   		}
 		}

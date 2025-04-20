@@ -406,6 +406,7 @@ table.abt img:hover {
 		text-align: center;
 		padding: 5px;
 		line-height: 1;
+		width:100%;
 	}
 
 	table.abt img {

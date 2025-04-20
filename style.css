@@ -436,8 +436,8 @@ table.abt td.tri {
     .section-footer {
         position: relative;
         font-size: 10px;
-        margin-bottom: 10px;
-        line-height: 1.2;
+        margin-bottom: 5px;
+        line-height: 1;
     }
 }
 
